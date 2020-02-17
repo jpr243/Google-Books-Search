@@ -6,13 +6,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
-    "config": "^3.2.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0",
-    "tailwind-react-ui": "^0.8.1"
+    "react-scripts": "3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,10 +30,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "server.js",
-  "devDependencies": {},
-  "author": "Janet Reid",
-  "license": "MIT"
+  }
 }
