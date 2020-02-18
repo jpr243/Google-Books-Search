@@ -1,9 +1,16 @@
-const express = require('express');
-const router = express.Router();
+const router = require("express").Router();
+const booksController = require("../../controllers/booksController");
 
-// @route   GET api/books
-// @desc    Test route
-// @access  Public
-router.get('/', (req, res) => res.send('Book route'));
+// Matches with "/api/books"
+router.route("/")
+  .get(booksController.findAll)
+  .post(booksController.create);
+
+// Matches with "/api/books/:id"
+router
+  .route("/:id")
+  .get(booksController.findById)
+  .put(booksController.update)
+  .delete(booksController.remove);
 
 module.exports = router;
